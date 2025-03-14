@@ -22,7 +22,7 @@
             padding: 20px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
             margin-right: 50px;
         }
 
@@ -142,7 +142,7 @@
             你的意見:<br>
             <textarea cols="30" rows="10" name="comment"></textarea><br>
 
-            <input type = "submit" value="送出"><br>
+            <input type = "submit" value="送出">
             <input type = "reset" value="清除"><br>
             
         </form>
