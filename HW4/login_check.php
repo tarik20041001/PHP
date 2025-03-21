@@ -16,13 +16,11 @@ $userName = $_POST["userName"];
 $userPwd = $_POST["userPwd"];
 
 if ( $defaultUserAcc == $userName && $defaultUserPwd == $userPwd ) {
-    echo "Login success";
     $_SESSION["who"] = 0;
     $cookiedate = strtotime("+1 hour", time());
     setcookie("userName", $defaultUserAcc, $cookiedate);
     header("Location:user.php");
 } else if ( $defaultAdminAcc == $userName && $defaultAdminPwd == $userPwd ) {
-    echo "Login success";
     $_SESSION["who"] = 1;
     $cookiedate = strtotime("+1 hour", time());
     setcookie("adminName", $defaultAdminAcc, $cookiedate);
